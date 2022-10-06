@@ -1,0 +1,11 @@
+@use '../abstracts/' as *;
+
+
+
+.flex-group {
+    display: flex;
+    flex-wrap: wrap;
+
+    //--flex-gap doesn't exist yet, just for easier overwriting
+    gap: var(--flex-gap, $flex-group-gap);
+}
