@@ -1,0 +1,31 @@
+@use '../abstracts/' as *;
+
+.section-heading {
+
+    &[data-type="decoration"]::after {
+    content: "";
+    display: block;
+    width: 10rem;
+    height: 2px;
+    background-color: currentColor;
+    margin-block: size(36);
+    
+    &.text-center   {
+      margin-inline: auto;
+     
+  }
+
+     
+    }
+    
+}
+
+// if we have a subtitle
+.section-heading:has(p) {
+    margin-block-end: size(36);
+  }
+  
+  // if we don't have a subtitle
+ .section-heading:not(:has(p)) {
+    margin-block-end: calc(size(36) * 2.5);
+  }
