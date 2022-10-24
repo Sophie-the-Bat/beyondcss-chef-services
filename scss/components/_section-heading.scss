@@ -10,13 +10,14 @@
     background-color: currentColor;
     margin-block: size(36);
     
-    &.text-center   {
-      margin-inline: auto;
+    .text-center & {
+      margin-inline: auto;   
+  
+      }
      
   }
 
-     
-    }
+  
     
 }
 
