@@ -6,13 +6,17 @@
    
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Chef Site</title>
+    <!--
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Lato:wght@400;700&display=swap" rel="stylesheet">   
+    -->
+
+   
     <link rel="stylesheet" href="/scss/main.scss">
   </head>
   <body>
-    <header class="primary-header | margin-block-start-36 bg-neutral-900">
+    <header class="primary-header | margin-block-start-36">
       <img class="logo mx-auto" src="/assets/logo.svg" alt="Chef John wellington">
       <nav class="primary-navigation | margin-block-start-24">
         <ul class="flex-group mx-auto ff-accent">
@@ -25,14 +29,13 @@
     <main>
       <section class="hero | text-center clr-neutral-100 bg-neutral-900">
         <div class="container">
-          <h1 class="fs-900 ff-accent margin-bottom-48">Homecooked meals delivered straight to your door</h1>
+          <h1 class="fs-900 ff-accent margin-block-end-48">Homecooked meals delivered straight to your door</h1>
           <div class="flex-group mx-auto">
             <button class="button" data-type="accent">Place order</button>
             <a href="#" class="button" data-type="outline">More Info</a>
           </div>
         </div>
       </section>
-
       <section class="section" id="about">
         <div class="container">
           <div class="even-columns">
@@ -71,7 +74,7 @@
       </section>
       <section class="section | bg-neutral-200 text-center" >
         <div class="container">
-          <header class="section-heading text-center" data-type="decoration">
+          <header class="section-heading" data-type="decoration">
             <h2 class="fs-800 ff-accent clr-primary-500">
               We make great food
             </h2>
@@ -113,10 +116,12 @@
           </div>
         </div>
       </section>
-      <section class="meals | section | bg-neutral-900 clr-neutral-100" id="meals">
+      <section class="meals | section | bg-neutral-900 clr-neutral-100 text-center" id="meals">
         <div class="container" data-type="wide">
-          <header class="section-header | text-center" data-type="decoration">
-            <h2 class="ff-accent fs-800">Some of our meals</h2>
+          <header class="section-heading" data-type="decoration">
+            <h2 class="ff-accent fs-800">
+              Some of our meals
+            </h2>
             <p class="fs-600 uppercase">
               Here are a few of our delicious, home cooked meals that are sure
               to please your tastebuds.
@@ -130,9 +135,9 @@
                   <source srcset="/assets/meal-01.webp" type="image/webp">
                   <img src="/assets/meal-01.jpg" loading="lazy" alt="Salmon filet on top of vegetables">
                 </picture>
-                <figcaption>
+                <figcaption class="padding-32">
                   <h3 class="fs-500 fs-bold uppercase">Pan-seared salmon and vegies</h3>
-                  <p>A Pan-seared salmon filet served on top of a giant bed of delicious vegetables</p>
+                  <p>A pan-seared salmon filet served on top of a giant bed of delicious vegetables</p>
                 </figcaption>
               </figure>
             </div>
@@ -143,9 +148,9 @@
                   <source srcset="/assets/meal-02.webp" type="image/webp">
                   <img src="/assets/meal-02.jpg" loading="lazy" alt="">
                 </picture>
-                <figcaption>
-                  <h3 class="fs-500 fs-bold uppercase"></h3>
-                  <p></p>
+                <figcaption class="padding-32">
+                  <h3 class="fs-500 fs-bold uppercase">Pan-seared salmon and vegies</h3>
+                  <p>A pan-seared salmon filet served on top of a giant bed of delicious vegetables</p>
                 </figcaption>
               </figure>
             </div>
@@ -156,20 +161,22 @@
                   <source srcset="/assets/meal-03.webp" type="image/webp">
                   <img src="/assets/meal-03.jpg" loading="lazy" alt="">
                 </picture>
-                <figcaption>
-                  <h3 class="fs-500 fs-bold uppercase"></h3>
-                  <p></p>
+                <figcaption class="padding-32">
+                  <h3 class="fs-500 fs-bold uppercase">Pan-seared salmon and vegies</h3>
+                  <p>A pan-seared salmon filet served on top of a giant bed of delicious vegetables</p>
                 </figcaption>
               </figure>
             </div>
           </div>
         </div>      
       </section>
-      <section class="testimonials" id="testimonials">
+      <section class="testimonials | section" id="testimonials">
        <div class="container">
-        <h2 class="fs-800 ff-accent clr-primary-500 text-center">
-          What our clients are saying about us
-        </h2>
+        <header class="section-heading | text-center">
+          <h2 class="fs-800 ff-accent clr-primary-500 ">
+            What our clients are saying about us
+          </h2>
+      </header>
         <div class="even-columns">
           <div class="card | box-shadow-1">
             <picture>
